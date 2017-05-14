@@ -117,7 +117,7 @@ EInmalig für alle Adapter muss die Einstellungen
 ![SCREENSHOT: VSCode Konfiguration der launch.json](doku/pics/VSCode_launch.json.png)
 
 launch.json Einstellungen zum Debuggen von ioBroker-Adaptern:
-```json
+```javascript
 {
     // Use IntelliSense to learn about possible Node.js debug attributes.
     // Hover to view descriptions of existing attributes.
