@@ -16,7 +16,9 @@ Der Adaptername in den Beispielen lautet **iobroker.template-master-mhe**.
 ### Template
 IoBroker Template Adapter: [https://github.com/ioBroker/ioBroker.template](https://github.com/ioBroker/ioBroker.template)
 
-### gestestet mit folgenden Versionen
+### gestestet in folgender Umgebung
+- ioBroker, lokal installiert
+- ioBroker.js-controller: 1.0.0
 - node.js: v6.10.2
 - npm: 3.10.10
 - Windows 10 Prof.
@@ -26,7 +28,7 @@ IoBroker Template Adapter: [https://github.com/ioBroker/ioBroker.template](https
 
 - [ioBroker Forum: Adapter debuggen mit VSCode](http://forum.iobroker.net/viewtopic.php?f=20&t=4564&p=61310&hilit=visual+studio+code#p44156)
 - [ioBroker Adapter Template auf Github](https://github.com/ioBroker/ioBroker.template#iobrokertemplate)
-- Allgemeine Informationen zur Adapterentwickulung au deutsch: [ioBroker AdapterDev Usertreffen 2017.pdf](http://forum.iobroker.net/download/file.php?id=11259)  von [Apollon77](http://forum.iobroker.net/memberlist.php?mode=viewprofile&u=378).
+- Allgemeine Informationen zur Adapterentwicklung auf deutsch: [ioBroker AdapterDev Usertreffen 2017.pdf](http://forum.iobroker.net/download/file.php?id=11259)  von [Apollon77](http://forum.iobroker.net/memberlist.php?mode=viewprofile&u=378).
 - [ioBroker Adapter Development Documentation](https://github.com/ioBroker/ioBroker/wiki/Adapter-Development-Documentation)
 - [Erste Schritte der Adapterentwicklung am Beispiel einer Webstrom IDE](https://github.com/ioBroker/ioBroker/wiki/Installation,-setup-and-first-steps-with-an-ioBroker-Development-Environment)
 
