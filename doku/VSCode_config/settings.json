@@ -1,0 +1,16 @@
+// Platzieren Sie Ihre Einstellungen in dieser Datei, um die Standardeinstellungen zu überschreiben.
+{
+"window.zoomLevel": 0,
+"editor.minimap.enabled": true,                 // zeigt die kleine Codeübersichtskarte rechts neben dem Code an
+"editor.dragAndDrop": true,                     // ermöglicht markierte Codeteile per Drag und Drop zu verschieben0
+"workbench.editor.closeOnFileDelete": false,
+"files.autoSave": "afterDelay",                 // Auotmatisches Speichern der Dateien einstellen
+"files.autoSaveDelay": 1000,                    // Autosave nach 1000 ms
+"[javascript]": {                               // Einstellungen für die SPrache "Javascript"
+},
+"telemetry.enableCrashReporter": false,         // 
+"workbench.colorTheme": "Quiet Light",          // Farbschema des Editors
+"telemetry.enableTelemetry": false,
+"workbench.iconTheme": "vs-seti",               // Icons für bekannte Dateieendungen. Wenn ja, welches Icon-Set soll verwendet werden
+"javascript.implicitProjectConfig.checkJs": true
+}
