@@ -32,41 +32,46 @@ IoBroker Template Adapter: [https://github.com/ioBroker/ioBroker.template](https
 - [ioBroker Adapter Development Documentation](https://github.com/ioBroker/ioBroker/wiki/Adapter-Development-Documentation)
 - [Erste Schritte der Adapterentwicklung am Beispiel einer Webstrom IDE](https://github.com/ioBroker/ioBroker/wiki/Installation,-setup-and-first-steps-with-an-ioBroker-Development-Environment)
 
+---
 
-## Allgemeine Vorgehensweise
+## Allgemeine Vorgehensweise - Template für einen Adapter verwenden
 
 ### 1. Download template
 
 - [https://github.com/ioBroker/ioBroker.template#iobrokertemplate](https://github.com/ioBroker/ioBroker.template#iobrokertemplate)
-- dort Punkt 1.)
+    - dort Punkt 1.) ausführen, z.B.: das Template in einem Ordner entpacken und speichern
+
 
 ### 2. "npm install" im Ordner ausgeführt
 
-- installiert die Standard npm Mopdule im Template
+- installiert die benötigten npm Mopdule in der Kopie des Templates
 - Ordner node-modules wird im Template Ordner neu angelegt
 - [https://github.com/ioBroker/ioBroker.template#iobrokertemplate](https://github.com/ioBroker/ioBroker.template#iobrokertemplate)
-- dort Punkt 2.)
+    - dort Punkt 2.) ausführen
 
 
-### 3. Adapter-Ordner in VSCode geladen
 
+### 3. grunt ausgeführt // ändert die Einstellungen im Template im vorhandenen Projekt
+
+- [https://github.com/ioBroker/ioBroker.template#iobrokertemplate](https://github.com/ioBroker/ioBroker.template#iobrokertemplate)
+    - dort Punkt 3.) ausführen
+- grunt global installieren, wenn noch nicht vorhanden
+- im Terminal ausführen:
+```
+grunt rename --name=template-master-mhe --email=iobroker@digheim.de --author="Michael Herwig"
+```
+- Adaptername, Author und Email-Adresse wird über grunt an den notwendigen Stellen im Code geändert
+
+### 4. Adapter-Ordner in VSCode laden
+
+- Ordnername anpassen. Hier im Beispiel von ioBroker.template-master in iobroker.template-master-mhe
 - VSCode: Datei/Ordner öffnen // oder STRG+K, STRG+O
 
 
-### 4. In VSCode die Version des Templates angepasst (von 0.5.0 auf 0.0.2)
+### 5. In VSCode die Version des Templates angepasst (von 0.5.0 auf 0.0.2)
 
 - in io-package.json von 0.5.0 auf 0.0.2 geändert   // verwendet von ioBroker
 - in package.json von 0.5.0 auf 0.0.2 geändert      // verwendet von npm
-
-
-### 5. grunt ausgeführt // ändert die Einstellungen im Template im vorhandenen Projekt
-
-- [https://github.com/ioBroker/ioBroker.template#iobrokertemplate](https://github.com/ioBroker/ioBroker.template#iobrokertemplate)
-- dort Punkt 3.)
-- grunt global installieren, wenn noch nicht vorhanden
-- grunt rename --name=template-master-mhe --email=iobroker@digheim.de --author="Michael Herwig"
-- Adaptername, Author und Email-Adresse wird über grunt an den notwendigen Stellen im Code geändert
-
 
 
 ### 6. nach ioBroker kopiert und Pfad/Name angepasst
@@ -94,9 +99,9 @@ IoBroker Template Adapter: [https://github.com/ioBroker/ioBroker.template](https
 - VSCode: Datei/Ordner schliessen // oder STRG+K F
 
 
-### 10. Installierten Ordner von ioBorker öffnen
+### 10. Installierten Ordner von ioBroker in VSCode öffnen
 
--- ../node_modules/iobroker.template-master-mhe
+- ../node_modules/iobroker.template-master-mhe
 
 ---
 
@@ -158,7 +163,7 @@ launch.json Einstellungen zum Debuggen von ioBroker-Adaptern:
 
 
 Anzeige im integriertem Terminal (Hinweis: es kann auch ein externes Terminal-Programm verwendet werden): 
-``` js
+``` cmd
 PS C:\ioBroker> node --debug-brk node_modules/iobroker.template-master-mhe/main.js --force --logs
 Debugger listening on [::]:5858
 ```
@@ -166,7 +171,7 @@ Debugger listening on [::]:5858
 
 Ausgabe im Terminal nach dem Starten des Debuggers:
 
-``` js
+``` cmd
 starting. Version 0.0.2 in C:/ioBroker/node_modules/iobroker.template-master-mhe, node: v6.10.2
 config test1: true
 config test1: 42
@@ -182,7 +187,7 @@ stateChange template-master-mhe.0.testVariable {"val":null,"ack":true,"ts":14947
 - mit **STRGF+C** im Terminal abbrechen
 
 Ausgabe im Terminal nach dem Stoppen des Debuggers:
-``` js
+``` cmd
 cleaned everything up...
 terminating
 cleaned everything up...
