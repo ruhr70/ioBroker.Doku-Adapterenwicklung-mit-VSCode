@@ -95,10 +95,11 @@ grunt rename --name=template-master-mhe --email=iobroker@digheim.de --author="Mi
 ### 9. Adapter rausgesucht und Instanz hinzugefügt
 
 - in der ioBroker Admin GUI auf das Plus beim Adapter drücken
+![SCREENSHOT: Instanz des eigenen Adapters](doku/pics/Instanz-installieren.png)
+
 - Instanz des Adapters wird installiert und angezeigt
-
 ![SCREENSHOT: Instanz des eigenen Adapters](doku/pics/Adapterinstanz.png)
-
+- zum debuggen den installierten Adapter stoppen
 
 ### 10. Installierten Ordner von ioBroker in VSCode öffnen
 
