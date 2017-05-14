@@ -237,3 +237,6 @@ PS C:\ioBroker>
 ## Sonstiges
 
 - meine Einstellungen (settings.json) für VSCode: [settings.json](doku/VSCode_config/settings.json)
+
+
+Test: [Test Navigation](doku/test.md)
